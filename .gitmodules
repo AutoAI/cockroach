@@ -1,0 +1,6 @@
+[submodule "cockroach-actuator"]
+	path = cockroach-actuator
+	url = https://github.com/DriveAI/cockroach-actuator.git
+[submodule "cockroach-brain"]
+	path = cockroach-brain
+	url = https://github.com/DriveAI/cockroach-brain.git
