@@ -8,5 +8,15 @@ The "Cockroach" is the colloquial name for our first vehicle. It was built over 
 - Steering and braking were actuated using [Firgelli Automations linear actuators](https://www.firgelliauto.com/products/feedback-rod-actuator) bolted directly to the steering column and brake cable, respectively.
 
 #Electronics
+- A 12v lead acid car battery was strapped to the front of the frame to power the systems.
+- The electrical harness was turned on and off by a 20 amp circuit breaker, which also served as a safety device.
+- The main power cables supplying the terminal blocks were 8 gauge stranded copper lines.
+- Power distribustion and grounding was handled using screw-type terminal blocks.
+- The visual processor and decision-making computer was an [Nvidia Jetson Tk1](http://www.nvidia.com/object/jetson-tk1-embedded-dev-kit.html).
+- All visual data was collected from a [StereoLabs Zed Camera](https://www.stereolabs.com/zed/specs/) and sent to the Jetson over USB 3.0 in real time.
+- Actuation was controlled by an [Arduino Mega 2560](https://www.arduino.cc/en/Main/ArduinoBoardMega2560) which communicated with the Jetson via serial over USB 2.0.
+- The actuators themselves were each powered by an [Arduino PWM Motor Shield] (http://www.robotshop.com/en/10a-dc-motor-driver-arduino-shield.html) attached to the terminal blocks.
+- A wireless router is bolted to the underside of the system to allow easy networking access via ethernet and good range.
+- 12v to 5v conversion for the arduino and sensors was done by a [DC to DC converter](http://www.ebay.com/itm/LM2596-Buck-Step-down-Power-Converter-Module-DC-4-0-40-to-1-3-37V-LED-Voltmeter-/400802470941?hash=item5d51b05c1d:g:XyoAAOSwLa9UXJBL).
 
 #Software
