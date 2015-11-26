@@ -9,6 +9,7 @@ The "Cockroach" is the colloquial name for our first vehicle. It was built over 
 
 #Electronics
 - A 12v lead acid car battery was strapped to the front of the frame to power the systems.
+- The battery was connected to a combination voltage and current meter to monitor power draw and battery life.
 - The electrical harness was turned on and off by a 20 amp circuit breaker, which also served as a safety device.
 - The main power cables supplying the terminal blocks were 8 gauge stranded copper lines.
 - Power distribustion and grounding was handled using screw-type terminal blocks.
@@ -20,3 +21,7 @@ The "Cockroach" is the colloquial name for our first vehicle. It was built over 
 - 12v to 5v conversion for the arduino and sensors was done by a [DC to DC converter](http://www.ebay.com/itm/LM2596-Buck-Step-down-Power-Converter-Module-DC-4-0-40-to-1-3-37V-LED-Voltmeter-/400802470941?hash=item5d51b05c1d:g:XyoAAOSwLa9UXJBL).
 
 #Software
+- The Jetson is running the custom ARM build of Ubuntu 14.04 that Nvidia shipped it with.
+- Our perception package uses the ZED SDK and is written in (C++?).
+- The Arduino actuation controller is written in their proprietary language and is compiled down into AVR.
+- The software uses the serial interface built into Linux to send commands to the Arduino.
